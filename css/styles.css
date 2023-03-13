@@ -18,17 +18,12 @@ body {
 /* common */
 
 .container {
-  width: 100%;
+  max-width: 428px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -270,7 +265,6 @@ button {
     url(../images/bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -295,7 +289,6 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-tablet.jpg);
-    max-width: 768px;
   }
 }
 
@@ -342,6 +335,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--main-white-bg);
   text-align: center;
+  margin-bottom: 72px;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -699,6 +693,7 @@ button {
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 24px;
   }
 }
@@ -825,19 +820,13 @@ button {
 
 .footer-field-input {
   display: block;
-
   padding: 8px 16px;
-
   height: 40px;
-  width: 100%;
-
+  width: 300px;
   outline: none;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-
   background-color: transparent;
-
   color: var(--secondary-light-color-bg-text);
 }
 
@@ -845,6 +834,9 @@ button {
   .footer-field-input {
     width: 264px;
   }
+}
+.footer-subscribe{
+  width: 500px;
 }
 
 .footer-field-input::placeholder {
@@ -1064,19 +1056,15 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-
-  width: 392px;
-
+  width: 95%;
+  max-width: 392px;
   padding: 72px 24px 24px 24px;
-
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
   transform: translate(-50%, -50%);
   scale: 1;
-
   transition: scale var(--transition);
 }
 
@@ -1085,20 +1073,15 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-
     min-width: 408px;
     min-height: 584px;
-
     padding: 72px 24px 24px 24px;
-
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
     transform: translate(-50%, -50%);
     scale: 1;
-
     transition: scale var(--transition);
   }
 }
@@ -1399,15 +1382,15 @@ button {
 
 .address-link-mob-tel {
   margin-bottom: 40px;
-
   font-style: normal;
   font-weight: 700;
-  font-size: 8.41vw;
+  font-size: 27px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--active-elem-color);
   text-decoration: none;
 }
+  
 
 .address-link-mob-email {
   font-style: normal;
